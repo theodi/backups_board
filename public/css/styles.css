@@ -8790,41 +8790,54 @@ button.close {
     display: none !important;
   }
 }
-/* line 9, ../sass/styles.scss */
+/* line 10, ../sass/styles.scss */
 body {
   background-color: #cccccc;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 h1 {
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 
-/* line 18, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 .build {
   border-color: black;
 }
-/* line 21, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 .build h1, .build h2 {
   text-align: center;
   font-family: 'Inconsolata', sans-serif;
 }
-/* line 26, ../sass/styles.scss */
+/* line 27, ../sass/styles.scss */
 .build h1 {
   font-size: 2em;
 }
-/* line 30, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .build h2 {
   font-size: 1.5em;
 }
 
-/* line 35, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
+.key {
+  border-color: black;
+  font-family: 'Inconsolata', sans-serif;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* line 43, ../sass/styles.scss */
 .passed {
   background-color: #49b82a;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .failed {
   background-color: #cc2129;
+}
+
+/* line 51, ../sass/styles.scss */
+.notrun {
+  background-color: #fa8100;
 }

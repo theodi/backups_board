@@ -3,7 +3,13 @@
 <div class='row'>
   <% @repos.each do |repo| %>
     <div class='col-md-4'>
-      <div class='panel build <%= repo["state"] %>'>
+      <% state = repo["state"] %>
+      <% build_time = DateTime.parse(repo['finished_at']).strftime('%s').to_i %>
+      <% now = DateTime.now.strftime('%s').to_i %>
+      <% if now - build_time > 86400 %>
+        <% state = 'notrun' %>
+      <% end %>
+      <div class='panel build <%= state %>'>
         <h1>
           <%= repo['name'] %>
         </h1>
@@ -14,3 +20,9 @@
     </div>
   <% end %>
 </div>
+
+<p class='text-center'>
+  <span class='panel key passed'>passed</span>
+  <span class='panel key failed'>failed</span>
+  <span class='panel key notrun'>didn't run in the last 24 hours</span>
+</p>

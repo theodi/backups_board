@@ -7,9 +7,13 @@ module BackupsBoard
       )
 
       build = data['builds'].first
-      build['name'] = repo
+      build['name'] = strip_name repo
 
       build
+    end
+
+    def strip_name repo
+      repo.gsub('theodi/backups-','')
     end
   end
 end

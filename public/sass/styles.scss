@@ -4,6 +4,7 @@
 
 $green: #49b82a;
 $red: #cc2129;
+$orange: #fa8100;
 $grey: #cccccc;
 
 body {
@@ -32,10 +33,21 @@ h1 {
   }
 }
 
+.key {
+  border-color: black;
+  font-family: 'Inconsolata', sans-serif;
+  padding: 5px;
+  margin: 5px;
+}
+
 .passed {
   background-color: $green;
 }
 
 .failed {
   background-color: $red;
+}
+
+.notrun {
+  background-color: $orange;
 }
