@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.1.3
+deploy:
+  provider: heroku
+  api_key:
+    secure: RpbQNGWN1HA4GkRHrchwiNTdJL0xVZq6o+6KQjpA7RbTq0+Nst9HiFu3SnAsAQtpamogC8u/0Ubc+kbT1l/5F+X/2uMBsAQm8lrxALjI9+Y3lFpOJhuP3jpb1pt274AcEH+wl567xfqbr2lGRfIa8RZlo+ZXByCv2yRAvWKvMXHZW1ikUWI8pwNV5R1jQaUeRlQsOrBIO+lEGQoVulDt3QR/o4TCBY66RjwLj0uGtjbI9z06gtVi2NEl0EoHHu7YiGExEm1usYpSpIftwtAenE0oOPPc+art6IRJQlnGLMP2JNa7/mhpezMMNq7ynbHZ4cV4vNJalxtNR6tFTzgQeakwzdBoOwBwNtmI15XoEG2ZqD2S6jDOft6enLq2KgP3/rDKeMEVjXt3qXoHetvXS86b3PzOqrvM0U86sG/BnDXlQVxK0wIN5dqFL9bJfoIBSnE9MoMsn4IaGmcSvIwrebOTysg9ZV5vdLfPa2l4ZREZJ+oraALzSxH8XcLiV9jMuJwDTT9rzL055fK3U3UbBojsQipzfZbqYrXQmuHQy0ImAkDrX6/ICTS+obICsb+IKulSX783t5imG7JC7LgmYgfF/3eSv9vm5lZng7L2MdfPMBHvLu+Zsij1QfLHgLM3Mo2xH5totPbEZ9BAC51TxTa3FAi4CuFLqTdMhym6smM=
+  app: backups-board
+  on:
+    repo: theodi/backups_board
