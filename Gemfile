@@ -9,6 +9,7 @@ gem 'rake'
 gem 'puma'
 gem 'compass'
 gem 'bootstrap-sass'
+gem 'httparty'
 
 group :test do
   gem 'rspec'

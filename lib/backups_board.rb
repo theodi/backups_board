@@ -1,6 +1,8 @@
 require 'sinatra/base'
 require 'tilt/erubis'
 require 'json'
+require 'yaml'
+require 'httparty'
 
 require_relative 'backups_board/racks'
 require_relative 'backups_board/helpers'
@@ -16,8 +18,10 @@ module BackupsBoard
 
       respond_to do |wants|
         wants.html do
-          @content = '<h1>Hello from BackupsBoard</h1>'
-          @title = 'BackupsBoard'
+          @title = 'Backups Board'
+          @repos = YAML.load_file('config/repos.yaml').map do |r|
+            panelise r
+          end
           erb :index, layout: :default
         end
 
